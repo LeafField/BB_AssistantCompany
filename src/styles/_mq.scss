@@ -1,8 +1,8 @@
 $breakpoints: (
-  "pc": "screen and (min-width:900px)",
+  pc: "screen and (min-width: 900px)",
 );
 
-@mixin mq($breakpoints, $breakpoint: "pc") {
+@mixin mq($breakpoint: pc) {
   @media #{map-get($breakpoints,$breakpoint)} {
     @content;
   }
